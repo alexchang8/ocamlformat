@@ -37,3 +37,6 @@ regtests-promote:
 headers:
 	tools/update_headers.sh
 	dune build @fmt --auto-promote
+
+js:
+	dune build js/main.bc.js --profile=release

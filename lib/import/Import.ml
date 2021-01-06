@@ -30,7 +30,9 @@ let check f x =
 module Fpath = struct
   include Fpath
 
-  let cwd () = Unix.getcwd () |> v
+  let cwd () =
+    print_endline "unix.cwd removed for js compilation" ;
+    failwith "removed for js compilation"
 
   let exists p = to_string p |> Caml.Sys.file_exists
 

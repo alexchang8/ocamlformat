@@ -112,3 +112,7 @@ val update : ?quiet:bool -> t -> Migrate_ast.Parsetree.attribute -> t
     [a]. [quiet] is false by default. *)
 
 val print_config : t -> unit
+
+val conventional_profile: t
+
+val kind_of_ext: string -> kind option
